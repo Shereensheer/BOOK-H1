@@ -1,0 +1,112 @@
+:root {
+  /* 🔮 Neon Purple / Cyan Palette */
+  --ifm-color-primary: #8b5cff;             /* main violet */
+  --ifm-color-primary-dark: #7343ff;
+  --ifm-color-primary-darker: #5a21ff;
+  --ifm-color-primary-darkest: #3a0fd4;
+
+  --ifm-color-primary-light: #c7b4ff;       /* light violet */
+  --ifm-color-primary-lighter: #e6ddff;
+  --ifm-color-primary-lightest: #f4f0ff;
+
+  /* Code styling */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 255, 0.12);
+}
+
+/* 🌙 Dark Mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #c6b2ff;             /* soft glow on dark */
+  --ifm-color-primary-dark: #a88bff;
+  --ifm-color-primary-darker: #8b5cff;
+  --ifm-color-primary-darkest: #6239e6;
+
+  --ifm-color-primary-light: #e8deff;
+  --ifm-color-primary-lighter: #f2ecff;
+  --ifm-color-primary-lightest: #faf8ff;
+
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 255, 0.18);
+}
+
+/* 🔘 Navbar login button */
+.navbar .custom-auth-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: rgba(139, 92, 255, 0.08);
+  color: var(--ifm-color-primary) !important;
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-height: 36px;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+}
+
+.navbar .custom-auth-btn:hover {
+  background: rgba(139, 92, 255, 0.18);
+  box-shadow: 0 0 18px rgba(139, 92, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+/* 🔐 General auth button */
+.auth-login-btn {
+  padding: 8px 16px;
+  background: rgba(139, 92, 255, 0.08);
+  color: var(--ifm-color-primary) !important;
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.auth-login-btn:hover {
+  background: rgba(139, 92, 255, 0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(139, 92, 255, 0.45);
+}
+
+/* 👤 Auth nav wrapper */
+.auth-nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 🟣 User chip */
+.auth-user-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(139, 92, 255, 0.15);
+  border: 1px solid rgba(139, 92, 255, 0.5);
+  color: var(--ifm-color-primary);
+  border-radius: 25px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(8px);
+}
+
+/* 🚪 Logout button */
+.auth-logout-btn {
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-logout-btn:hover {
+  background: rgba(139, 92, 255, 0.18);
+  box-shadow: 0 0 18px rgba(139, 92, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+
